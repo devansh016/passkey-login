@@ -1,0 +1,36 @@
+{
+  "name": "passkey-login/passkey-login",
+  "description": "Passwordless WebAuthn/FIDO2 passkey authentication plugin for WordPress multisite",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": "^8.2",
+    "web-auth/webauthn-lib": "^5.2"
+  },
+  "require-dev": {
+    "wp-coding-standards/wpcs": "^3.0",
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+  },
+  "autoload": {
+    "classmap": [
+      "includes/"
+    ]
+  },
+  "scripts": {
+    "lint": [
+      "@lint:php",
+      "@lint:phpcs"
+    ],
+    "lint:phpcs": "phpcs",
+    "lint:php": "find . -path './vendor' -prune -o -name '*.php' -print0 | xargs -0 -n1 php -l"
+  },
+  "config": {
+    "platform": {
+      "php": "8.2.0"
+    },
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}

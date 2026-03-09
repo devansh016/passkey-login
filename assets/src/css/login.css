@@ -1,0 +1,92 @@
+.passkey-login-login-wrap {
+  margin: 10px 0 12px;
+}
+
+#loginform {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#loginform .forgetmenot {
+  order: 40;
+  width: auto;
+  margin-right: auto;
+}
+
+#loginform .submit {
+  order: 50;
+  width: auto;
+  margin-left: auto;
+  padding: 0;
+}
+
+#loginform .submit .button {
+  float: none;
+}
+
+#loginform .passkey-login-login-wrap {
+  order: 60;
+  width: 100%;
+}
+
+#loginform #passkey-login-status {
+  order: 70;
+  width: 100%;
+}
+
+.passkey-login-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 12px;
+  color: #1d2327;
+  font-size: 16px;
+}
+
+.passkey-login-divider::before,
+.passkey-login-divider::after {
+  content: "";
+  flex: 1 1 auto;
+  max-width: 130px;
+  height: 1px;
+  background: #d4d9de;
+}
+
+.passkey-login-button-wrap {
+  margin: 0;
+}
+
+#passkey-login-login {
+  width: 100%;
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2c3338;
+  border-radius: 6px;
+  background: #fff;
+  color: #1d2327;
+  box-shadow: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+#passkey-login-login:hover,
+#passkey-login-login:focus {
+  border-color: #2c3338;
+  background: #f6f7f7;
+  color: #1d2327;
+  box-shadow: none;
+}
+
+.passkey-login-label {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+#passkey-login-status {
+  margin: 8px 0 0;
+}
